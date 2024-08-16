@@ -1,7 +1,7 @@
 .frame {
+  position: relative;
   width: 100%;
   height: 100%;
-  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -10,12 +10,12 @@
 
 .main_frame {
   position: relative;
+  margin-top: 2px;
   width: 1440px;
   height: 1312px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-top: 2px;
   background: #f7f6b9;
 }
 
@@ -52,12 +52,11 @@
 
 .main_frame .left_frame .left_1 .left_1-1 {
   position: relative;
-  display: flex;
-  flex-direction: column;
   width: 156.16px;
   height: 142.53px;
-
   margin-bottom: 29.46px;
+  display: flex;
+  flex-direction: column;
 }
 
 .main_frame .left_frame .left_1 .left_1-2 {
@@ -99,12 +98,12 @@
 
 .main_frame .left_frame .left_1 .left-icons {
   position: relative;
+  width: 238px;
+  margin-top: 19px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 238px;
-  margin-top: 19px;
 }
 
 .main_frame .left_frame .left_1 .left-icons .link_href {
@@ -121,23 +120,13 @@
   background: #ffb400;
 }
 
-/*
-.icon-1 {
-  position: relative;
-  left: 29.17%;
-  right: 27.08%;
-  margin-top: 5.86px;
-}
-  */
-
 .main_frame .left_frame .marginer {
   position: relative;
+  margin-top: 39px;
   width: 220px;
   height: 0px;
   margin-left: 40px;
   margin-bottom: 25px;
-  margin-top: 39px;
-
   border: 1.5px solid #f0f0f6;
 }
 
@@ -163,13 +152,12 @@
 
 .main_frame .left_frame .left_2 .span_2-1 {
   position: relative;
+  width: 46.21px;
+  height: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 46.21px;
-  height: 24px;
 
-  color: rgb(43, 43, 43);
   font-family: sans-serif;
   font-style: normal;
   font-size: 15px;
@@ -178,26 +166,29 @@
   text-transform: capitalize;
 
   background: rgb(255, 180, 0);
+  color: rgb(43, 43, 43);
 }
 
 .main_frame .left_frame .left_2 strong {
-  color: rgb(43, 43, 43);
   font-family: sans-serif;
   font-style: normal;
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
   text-transform: capitalize;
+
+  color: rgb(43, 43, 43);
 }
 
 .main_frame .left_frame .left_2 .strong_2-3 {
-  color: rgb(126, 185, 66);
   font-family: sans-serif;
   font-style: normal;
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
   text-transform: capitalize;
+
+  color: rgb(126, 185, 66);
 }
 
 .main_frame .left_frame .left_2 .left_2-2 {
@@ -212,13 +203,12 @@
 
 .main_frame .left_frame .left_2 .span_2-2 {
   position: relative;
+  width: 89px;
+  height: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 89px;
-  height: 24px;
 
-  color: rgb(43, 43, 43);
   font-family: sans-serif;
   font-style: normal;
   font-size: 15px;
@@ -227,6 +217,7 @@
   text-transform: capitalize;
 
   background: rgb(255, 180, 0);
+  color: rgb(43, 43, 43);
 }
 
 .main_frame .left_frame .left_2 .left_2-3 {
@@ -241,13 +232,12 @@
 
 .main_frame .left_frame .left_2 .span_2-3 {
   position: relative;
+  width: 85px;
+  height: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 85px;
-  height: 24px;
 
-  color: rgb(43, 43, 43);
   font-family: sans-serif;
   font-style: normal;
   font-size: 15px;
@@ -256,6 +246,7 @@
   text-transform: capitalize;
 
   background: rgb(255, 180, 0);
+  color: rgb(43, 43, 43);
 }
 
 .main_frame .left_frame .left_2 .left_2-4 {
@@ -270,13 +261,12 @@
 
 .main_frame .left_frame .left_2 .span_2-4 {
   position: relative;
+  width: 75px;
+  height: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 75px;
-  height: 24px;
 
-  color: rgb(43, 43, 43);
   font-family: sans-serif;
   font-style: normal;
   font-size: 15px;
@@ -285,6 +275,7 @@
   text-transform: capitalize;
 
   background: rgb(255, 180, 0);
+  color: rgb(43, 43, 43);
 }
 
 .main_frame .left_frame .left_3 {
@@ -309,22 +300,25 @@
   margin-top: 25px;
   margin-bottom: 15px;
 
-  color: rgb(43, 43, 43);
   font-family: sans-serif;
   font-style: normal;
   font-size: 18px;
   font-weight: 600;
   text-transform: capitalize;
+
+  color: rgb(43, 43, 43);
 }
 
 .main_frame .left_frame .left_3 .title_2 {
   margin-bottom: 5px;
-  color: rgb(118, 118, 118);
+  
   font-family: sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
   text-transform: capitalize;
+
+  color: rgb(118, 118, 118);
 }
 
 .main_frame .left_frame .left_3 .margin_container {
@@ -332,27 +326,29 @@
   width: 220px;
   height: 4px;
   margin-top: 5px;
-  border: 0.5px solid rgb(255, 180, 0);
-  border-radius: 30px;
   display: flex;
   align-items: center;
+
+  border: 0.5px solid rgb(255, 180, 0);
+  border-radius: 30px;
+  
 }
 
 .main_frame .left_frame .left_3 .margin_container .margin_protsent {
   width: 100%;
-  height: 2px;
+  height: 4px;
   background: rgb(255, 180, 0);
 }
 
 .main_frame .left_frame .left_3 .margin_container .margin_protsent_1 {
   width: 80%;
-  height: 2px;
+  height: 4px;
   background: rgb(255, 180, 0);
 }
 
 .main_frame .left_frame .left_3 .margin_container .margin_protsent_2 {
   width: 60%;
-  height: 2px;
+  height: 4px;
   background: rgb(255, 180, 0);
 }
 
@@ -369,22 +365,23 @@
   margin-top: 25px;
   margin-bottom: 15px;
 
-  color: rgb(43, 43, 43);
   font-family: sans-serif;
   font-style: normal;
   font-size: 18px;
   font-weight: 600;
   text-transform: capitalize;
+
+  color: rgb(43, 43, 43);
 }
 
 .main_frame .left_frame .left_4 .title_2 {
-  margin-bottom: 5px;
-  color: rgb(118, 118, 118);
   font-family: sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
   text-transform: capitalize;
+
+  color: rgb(118, 118, 118);
 }
 
 .main_frame .left_frame .left_4 .lang_container {
@@ -401,42 +398,44 @@
   width: 220px;
   height: 4px;
   margin-top: 5px;
-  border: 0.5px solid rgb(255, 180, 0);
-  border-radius: 30px;
   display: flex;
   align-items: center;
+
+  border: 0.5px solid rgb(255, 180, 0);
+  border-radius: 30px;
+ 
 }
 
 .main_frame .left_frame .left_4 .margin_container .margin_protsent_3 {
   width: 90%;
-  height: 2px;
+  height: 4px;
   background: rgb(255, 180, 0);
 }
 
 .main_frame .left_frame .left_4 .margin_container .margin_protsent_4 {
   width: 85%;
-  height: 2px;
+  height: 4px;
   background: rgb(255, 180, 0);
 }
 
 .main_frame .left_frame .left_4 .margin_container .margin_protsent_5 {
   width: 80%;
-  height: 2px;
+  height: 4px;
   background: rgb(255, 180, 0);
 }
 
 .main_frame .left_frame .left_4 .margin_container .margin_protsent_6 {
   width: 75%;
-  height: 2px;
+  height: 4px;
   background: rgb(255, 180, 0);
 }
 
 .main_frame .left_frame .left_4 .margin_container .margin_protsent_7 {
   width: 70%;
-  height: 2px;
+  height: 4px;
   background: rgb(255, 180, 0);
 }
-/*
+
 .main_frame .left_frame .left_5 {
   position: relative;
   width: 186px;
@@ -446,9 +445,43 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
+
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
-*/
+
+.main_frame .left_frame .left_5 .skills_container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.main_frame .left_frame .left_5 .title_3 {
+  margin-bottom: 17px;
+
+  font-family: sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 123.6%;
+  text-transform: capitalize;
+
+  color: rgb(43, 43, 43);
+}
+
+.main_frame .left_frame .left_5 .title_4 {
+  margin-bottom: 7px;
+  margin-left: 10px;
+
+  font-family: sans-serif;
+  font-style: normal;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+
+  color: rgb(118, 118, 118);
+}
 
 .frame .main_frame .midd_frame {
   position: relative;
@@ -472,42 +505,46 @@
 
 .frame .main_frame .midd_frame .top_frame .left_cont {
   position: relative;
-  display: flex;
   width: 60%;
+  display: flex;
   flex-direction: column;
 }
 
 .frame .main_frame .midd_frame .top_frame .left_cont strong {
   margin-top: 99px;
   margin-left: 56px;
-  color: rgb(43, 43, 43);
+
   font-family: sans-serif;
   font-style: normal;
   font-size: 48px;
   font-weight: 700;
   line-height: 123.6%;
+
+  color: rgb(43, 43, 43);
 }
 
 .frame .main_frame .midd_frame .top_frame .left_cont span {
   margin-left: 61px;
   margin-top: 17px;
-  color: rgb(118, 118, 118);
+
   font-family: sans-serif;
   font-style: normal;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   text-transform: capitalize;
+
+  color: rgb(118, 118, 118);
 }
 
-.frame .main_frame .midd_frame .top_frame .left_cont .button_1 {
+.frame .main_frame .midd_frame .top_frame .left_cont .button {
   position: relative;
   width: 154px;
   height: 51px;
   margin-left: 56px;
   margin-top: 22px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   border-radius: 5px;
@@ -515,14 +552,14 @@
   background: rgb(255, 180, 0);
 }
 
-.frame .main_frame .midd_frame .top_frame .left_cont .button_1 button {
+.frame .main_frame .midd_frame .top_frame .left_cont button {
   font-family: sans-serif;
   font-style: normal;
   font-size: 22px;
   font-weight: 500;
   line-height: 24px;
-  text-transform: capitalize;
   border: none;
+
   background: rgb(255, 180, 0);
 }
 
@@ -539,18 +576,18 @@
   height: 40px;
   margin-top: 148px;
   margin-left: 296pxpx;
-  color: rgb(43, 43, 43);
+
   font-family: sans-serif;
   font-style: normal;
   font-size: 32px;
   font-weight: 700;
   line-height: 123.6%;
   text-transform: capitalize;
+
+  color: rgb(43, 43, 43);
 }
 
 .frame .main_frame .midd_frame .center_frame .center_tittle_2 {
-
-  color: rgb(118, 118, 118);
   width: 438px;
   height: 68px;
   margin-top: 25px;
@@ -562,4 +599,85 @@
   letter-spacing: 0%;
   text-transform: capitalize;
   text-align: center;
+
+  color: rgb(118, 118, 118);
 }
+
+.frame .main_frame .midd_frame .bottom_frame {
+  position: relative;
+  margin-top: 40px;
+  width: 980px;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.frame .main_frame .midd_frame .bottom_frame .box {
+  position: relative;
+  margin-right: 20px;
+  margin-top: 16px;
+  width: 305px;
+  height: 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: white;
+}
+
+.frame .main_frame .midd_frame .bottom_frame .box strong {
+  margin-top: 20px;
+  font-family: sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 123.6%;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+
+  color: rgb(43, 43, 43);
+}
+
+.frame .main_frame .midd_frame .bottom_frame .box span {
+  font-family: sans-serif;
+  font-style: normal;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: capitalize;
+
+  color: rgb(118, 118, 118);
+}
+
+.frame .main_frame .midd_frame .bottom_frame .box a {
+  font-family: sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0%;
+  text-decoration: none;
+
+  color: rgb(255, 180, 0);
+}
+
+.frame .main_frame .right_frame img {
+   margin-top: 52px;
+}
+
+.frame .main_frame .right_frame .icon_blog {
+  position: relative;
+  margin-top: 150px;
+  width: 65px;
+  height: 493px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
