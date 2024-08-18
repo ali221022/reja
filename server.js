@@ -1,4 +1,4 @@
-console.log("Web Serverni boshlash");
+console.log("Xush kelibsiz Shohjahon!");
 const express = require("express");
 const app = express();
 const http = require("http");
