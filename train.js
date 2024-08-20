@@ -137,3 +137,37 @@ async function run() {
 run();
 */
 
+
+// A-tack
+
+/*
+function countLetter(a, b)  {
+   return a.split('').reduce((count, char) => {
+    return  char === b ? count +1 : count; 
+   }, 0)
+}
+
+console.log(countLetter("ikkilanish", "i"));
+*/
+
+
+function countLetter(a, b) {
+    let count = 0;
+    for (let i = 0; i < b.length; i++) {
+        if (b[i] === a) {
+            count++;
+        }
+    }
+    return count;
+}
+
+// Misol uchun:
+console.log(countLetter("e", "engineer")); // 3 ni return qiladi 
+
+/*
+function countLetter(a, b) {
+    return b.split(a).length - 1;
+}
+
+console.log(countLetter("s", "assalomu alaykum"));
+*/
