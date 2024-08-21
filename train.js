@@ -150,7 +150,7 @@ function countLetter(a, b)  {
 console.log(countLetter("ikkilanish", "i"));
 */
 
-
+/*
 function countLetter(a, b) {
     let count = 0;
     for (let i = 0; i < b.length; i++) {
@@ -160,9 +160,11 @@ function countLetter(a, b) {
     }
     return count;
 }
-
+   
 // Misol uchun:
-console.log(countLetter("e", "engineer")); // 3 ni return qiladi 
+ console.log(countLetter("e", "engineer")); // 3 ni return qiladi 
+ */
+
 
 /*
 function countLetter(a, b) {
@@ -171,3 +173,7 @@ function countLetter(a, b) {
 
 console.log(countLetter("s", "assalomu alaykum"));
 */
+
+
+// B-Tack
+

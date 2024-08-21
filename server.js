@@ -36,11 +36,11 @@ app.get("/author", (req, res) => {
 });
 
 app.get("/", function (req, res) {
-  res.render("harid");
+  res.render("reja");
 });
 
 const server = http.createServer(app);
 let PORT = 3000;
 server.listen(PORT, function () {
-  console.log(`The server is running successfully on port localhost:3000`);
+  console.log(`The server is running successfully on port localhost:3000, http//localhost:3000`);
 });
