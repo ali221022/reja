@@ -28,6 +28,3 @@ mongodb.connect(
    }
  }
 );
-
-
-// mongodb+srv://ali221022:ali221022!@cluster0.dhqnc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
