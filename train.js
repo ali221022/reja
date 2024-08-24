@@ -207,6 +207,8 @@ MASALAN: const shop = new Shop(4, 5, 2); shop.qoldiq() return hozir 20:40da 4ta 
 
 // C-TACK
 
+
+
 class Shop {
     constructor(non, lagmon, cola) {
         this.products = {
@@ -214,32 +216,40 @@ class Shop {
             lagmon: lagmon,
             cola: cola
         };
-        this.logTime = () => {
-            const now = new Date();
-            return now.toLocaleTimeString();
-        };
+    }
+
+    logMessage(message) {
+        const currentTime = new Date().toLocaleTimeString();
+        console.log(`Hozir ${currentTime}da ${message}`);
     }
 
     qoldiq() {
         const { non, lagmon, cola } = this.products;
-        `this.logMessage(${non}ta non, ${lagmon}ta lagmon va ${cola}ta cola mavjud!);`
+        return `Hozir ${new Date().toLocaleTimeString()}da ${non}ta non, ${lagmon}ta lagmon va ${cola}ta cola mavjud!`;
     }
 
     sotish(product, quantity) {
         if (this.products[product] !== undefined && this.products[product] >= quantity) {
             this.products[product] -= quantity;
-            `this.logMessage(${quantity}ta ${product} sotildi!);`
+            this.logMessage(`${quantity}ta ${product} sotildi!`);
         } else {
-            `this.logMessage(${product} uchun yetarli miqdor yo'q yoki mahsulot topilmadi!);`
+            this.logMessage(`${product} uchun yetarli miqdor yo'q yoki mahsulot topilmadi!`);
         }
     }
 
     qabul(product, quantity) {
         if (this.products[product] !== undefined) {
             this.products[product] += quantity;
-            `this.logMessage(${quantity}ta ${product} qabul qilindi!);`
+            this.logMessage(`${quantity}ta ${product} qabul qilindi!`);
         } else {
-            `this.logMessage(${product} mahsuloti topilmadi!);`
+            this.logMessage(`${product} mahsuloti topilmadi!`);
         }
     }
-};
+}
+
+// Foydalanish namunasi
+const shop = new Shop(4, 5, 2);
+console.log(shop.qoldiq()); // Hozir 20:40da 4ta non, 5ta lagmon va 2ta cola mavjud!
+shop.sotish('non', 3); // Hozir 20:41da 3ta non sotildi!
+shop.qabul('cola', 4); // Hozir 20:42da 4ta cola qabul qilindi!
+console.log(shop.qoldiq()); // Hozir 20:43da 1ta non, 5ta lagmon va 6ta cola mavjud!
