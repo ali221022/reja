@@ -208,7 +208,7 @@ MASALAN: const shop = new Shop(4, 5, 2); shop.qoldiq() return hozir 20:40da 4ta 
 // C-TACK
 
 
-
+/*
 class Shop {
     constructor(non, lagmon, cola) {
         this.products = {
@@ -228,19 +228,19 @@ class Shop {
         return `Hozir ${new Date().toLocaleTimeString()}da ${non}ta non, ${lagmon}ta lagmon va ${cola}ta cola mavjud!`;
     }
 
-    sotish(product, quantity) {
+    sotish(product, miqdor) {
         if (this.products[product] !== undefined && this.products[product] >= quantity) {
-            this.products[product] -= quantity;
-            this.logMessage(`${quantity}ta ${product} sotildi!`);
+            this.products[product] -= miqdor;
+            this.logMessage(`${miqdor}ta ${product} sotildi!`);
         } else {
             this.logMessage(`${product} uchun yetarli miqdor yo'q yoki mahsulot topilmadi!`);
         }
     }
 
-    qabul(product, quantity) {
+    qabul(product, miqdor) {
         if (this.products[product] !== undefined) {
-            this.products[product] += quantity;
-            this.logMessage(`${quantity}ta ${product} qabul qilindi!`);
+            this.products[product] += miqdor;
+            this.logMessage(`${miqdor}ta ${product} qabul qilindi!`);
         } else {
             this.logMessage(`${product} mahsuloti topilmadi!`);
         }
@@ -253,3 +253,28 @@ console.log(shop.qoldiq()); // Hozir 20:40da 4ta non, 5ta lagmon va 2ta cola mav
 shop.sotish('non', 3); // Hozir 20:41da 3ta non sotildi!
 shop.qabul('cola', 4); // Hozir 20:42da 4ta cola qabul qilindi!
 console.log(shop.qoldiq()); // Hozir 20:43da 1ta non, 5ta lagmon va 6ta cola mavjud!
+*/
+
+/*
+D-TASK: 
+
+Shunday function tuzing, u 2ta string parametr ega bolsin, hamda agar har ikkala string bir hil harflardan iborat bolsa true aks holda false qaytarsin
+MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true;
+
+@MITASK
+
+*/
+
+function solishtirish(a, b) {
+    // Har ikkala stringni alifbo tartibida saralash
+    let solishtirishA = a.split('').sort().join('');
+    let solishtirishB = b.split('').sort().join('');
+    
+    // Saralangan stringlarni taqqoslash
+    // return solishtirishA == solishtirishB;
+    return solishtirishA === solishtirishB;
+}
+
+// Test
+console.log(solishtirish("mi1tgroup", "gm1tiprou")); // true
+console.log(solishtirish("hello", "world")); // false

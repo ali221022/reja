@@ -1,6 +1,5 @@
 console.log("Xush kelibsiz Shohjahon!");
 const express = require("express");
-const res = require("express/lib/response");
 const app = express();
 
 
@@ -23,7 +22,7 @@ app.set("view engine", "ejs");
 
 // 4 Routing code
 app.post("/create-item", (req, res) => {
-  console.log('user entred /create-item');
+  console.log('user entered /create-item');
   const new_reja = req.body.reja;
   db.collection("plans").insertOne({reja: new_reja}, (err, data) => {
     console.log(data.ops);
@@ -33,11 +32,27 @@ app.post("/create-item", (req, res) => {
 
 app.post("/delete-item", (req, res) => {
   const id = req.body.id;
-  db.collection("plans").deleteOne({_id: new mongodb.ObjectId(id) }, function(err, data) {
+  db.collection("plans").deleteOne({_id: new mongodb.ObjectId(id) }, function (err, data) {
     res.json({ state: "success"});
   });
 });
 
+app.post("/edit-item", (req,res) => {
+  const data = req.body;
+  console.log(data);
+  db.collection("plans").findOneAndUpdate( {_id: new mongodb.ObjectId(data.id) }, {  $set: { reja: data.new_input } }, function(err, data) {
+    res.json({ state: "success"});
+  });
+  res.end("done");
+});
+
+app.post("/delete-all", (req, res) => {
+  if (req.body.delete_all) {
+    db.collection("plans").deleteMany(function () {
+      res.json({state: "Hamma rejalar o'chirildi"});
+    });
+  }
+});
 
 app.get("/", function (req, res) {
   console.log("user entered /");
