@@ -264,7 +264,7 @@ MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true;
 @MITASK
 
 */
-
+/*
 function solishtirish(a, b) {
     // Har ikkala stringni alifbo tartibida saralash
     let solishtirishA = a.split('').sort().join('');
@@ -278,3 +278,38 @@ function solishtirish(a, b) {
 // Test
 console.log(solishtirish("mi1tgroup", "gm1tiprou")); // true
 console.log(solishtirish("hello", "world")); // false
+*/
+
+
+
+/*F-TASK: 
+
+Shunday findDoublers function tuzing, unga faqat bitta string argument pass bolib, agar stringda bir hil harf qatnashgan bolsa true, qatnashmasa false qaytarishi kerak.
+MASALAN: getReverse("hello") return true return qiladi
+
+@MITASK
+*/
+
+
+function findDoublers(str) {
+    // Object yoki Map yordamida harflarni tekshirish
+    const charMap = {};
+    
+    // Barcha harflarni birma-bir ko'rib chiqamiz
+    for (let i = 0; i < str.length; i++) {
+        let char = str[i];
+        // Agar harf allaqachon objectda mavjud bo'lsa, demak bu harf takrorlangan
+        if (charMap[char]) {
+            return true;
+        } else {
+            // Aks holda, harfni objectga qo'shamiz
+            charMap[char] = true;
+        }
+    }
+    // Agar barcha harflarni tekshirib chiqqach, hech qanday takrorlanish topilmasa, false qaytaramiz
+    return false;
+}
+
+// Misol uchun:
+console.log(findDoublers("hello")); // true
+console.log(findDoublers("world")); // false
